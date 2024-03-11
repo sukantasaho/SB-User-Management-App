@@ -1,0 +1,7 @@
+<h2>Hi {FULLNAME},</h2>
+ 
+<h3>Please find your recovery password below</h3>
+<h3>Password : {PWD}</h3>
+ 
+<h2>Thanks,</h2>
+<h2>Admin Team.</h2>
