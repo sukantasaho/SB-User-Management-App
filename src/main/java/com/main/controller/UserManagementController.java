@@ -1,5 +1,4 @@
 package com.main.controller;
-
 import java.io.IOException;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,10 +26,10 @@ public class UserManagementController {
 	private IUserManagementService service;
 	
 	@PostMapping("/saveUser")
-	public ResponseEntity<Boolean> userRegister(@RequestBody UserRequestAndResponseDTO dto) throws IOException, TemplateException
+	public ResponseEntity<String> userRegister(@RequestBody UserRequestAndResponseDTO dto) throws IOException, TemplateException
 	{
-		 boolean status = service.userRegister(dto);
-		return new ResponseEntity<Boolean>(status, HttpStatus.OK);
+		 String status = service.userRegister(dto);
+		return new ResponseEntity<String>(status, HttpStatus.OK);
 	}
 	
 	@PostMapping("/login")

@@ -1,19 +1,12 @@
 package com.main.mail;
-
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.util.Date;
-import java.util.Map;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.core.io.ClassPathResource;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Component;
-import org.springframework.ui.freemarker.FreeMarkerTemplateUtils;
-
-import freemarker.template.Configuration;
 import freemarker.template.TemplateException;
 import jakarta.mail.MessagingException;
 import jakarta.mail.internet.MimeMessage;
@@ -23,14 +16,10 @@ public class UserMailSystem {
 
 	 
 	 @Autowired
-    private JavaMailSender sender;
+     private JavaMailSender sender;
 	 
 	 @Value("${spring.mail.username}")
 	 private String fromEmail;
-	 
-	 @Autowired
-	 private Configuration config;
-	 
 	 
 	public boolean userRegisterEmail(String subject, String toEmail, String body) throws IOException, TemplateException 
 	{

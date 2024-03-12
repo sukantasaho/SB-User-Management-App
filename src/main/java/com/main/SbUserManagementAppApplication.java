@@ -1,25 +1,14 @@
 package com.main;
-
 import java.io.IOException;
-import java.time.LocalDate;
-
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.ConfigurableApplicationContext;
-
-import com.main.dto.ActivateAccountDTO;
-import com.main.dto.LoginDTO;
-import com.main.dto.UserRequestAndResponseDTO;
-import com.main.service.IUserManagementService;
-
 import freemarker.template.TemplateException;
 
 @SpringBootApplication
 public class SbUserManagementAppApplication {
 
 	public static void main(String[] args) throws IOException, TemplateException {
-		ApplicationContext ctx = SpringApplication.run(SbUserManagementAppApplication.class, args);
+		SpringApplication.run(SbUserManagementAppApplication.class, args);
 		
 		//IUserManagementService service = ctx.getBean("userService", IUserManagementService.class);
 		

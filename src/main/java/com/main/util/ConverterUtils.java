@@ -1,10 +1,10 @@
 package com.main.util;
-
 import java.util.List;
 import java.util.stream.Collectors;
 import org.springframework.beans.BeanUtils;
 import com.main.dto.UserRequestAndResponseDTO;
 import com.main.entity.UserMaster;
+
 public class ConverterUtils {
 
 	public static List<UserRequestAndResponseDTO>  convertDBOListToDTOList(List<UserMaster> dboList)

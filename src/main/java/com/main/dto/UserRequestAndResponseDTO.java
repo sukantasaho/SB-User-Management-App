@@ -1,5 +1,4 @@
 package com.main.dto;
-
 import java.time.LocalDate;
 
 public class UserRequestAndResponseDTO {
@@ -60,6 +59,4 @@ public class UserRequestAndResponseDTO {
 	public void setSsn(Long ssn) {
 		this.ssn = ssn;
 	}
-	
-	
 }

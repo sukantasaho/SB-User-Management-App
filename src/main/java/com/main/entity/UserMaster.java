@@ -1,12 +1,8 @@
 package com.main.entity;
-
 import java.time.LocalDate;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
-import org.springframework.web.jsf.FacesContextUtils;
-
 import com.main.util.ConstantsUtil;
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
